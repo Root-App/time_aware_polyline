@@ -1,5 +1,7 @@
 module TimeAwarePolyline
   require 'time'
+  GPX_TIME_FORMAT = "%FT%T%:z".freeze # 2016-07-21T05:43:09+00:00
+
   def self.encode_time_aware_polyline(gpx_logs)
     _extend_time_aware_polyline(:gpx_logs => gpx_logs)
   end
@@ -26,7 +28,7 @@ module TimeAwarePolyline
   end
 
   def self._get_time_from_polyline(int_representation)
-    Time.at(int_representation).utc.strftime("%FT%T%:z") # 2016-07-21T05:43:09+00:00
+    Time.at(int_representation).utc.strftime(GPX_TIME_FORMAT)
   end
 
   def self._get_coordinate_for_polyline(coordinate)
