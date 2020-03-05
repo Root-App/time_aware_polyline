@@ -5,7 +5,7 @@ This gem provides a implementation of the [time aware polyline](https://medium.c
 ## Encoder
 
 ```ruby
-require 'time-aware-polyline'
+require 'time_aware_polyline'
 
 points = [
   [19.13626, 72.92506, '2016-07-21T05:43:09+00:00'],
@@ -19,7 +19,7 @@ TimeAwarePolyline.encode_time_aware_polyline(points)
 ## Decoder
 
 ```ruby
-require 'time-aware-polyline'
+require 'time_aware_polyline'
 
 TimeAwarePolyline.decode_time_aware_polyline('spxsBsdb|Lymo`qvAx@TKvAr@K')
 ```
