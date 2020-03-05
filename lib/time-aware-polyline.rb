@@ -1,5 +1,5 @@
 module TimeAwarePolyline
-  require 'time'
+  require "time"
   GPX_TIME_FORMAT = "%FT%T%:z".freeze # 2016-07-21T05:43:09+00:00
 
   def self.encode_time_aware_polyline(gpx_logs)
