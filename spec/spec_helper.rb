@@ -1,4 +1,4 @@
-require 'time-aware-polyline'
+require 'time_aware_polyline'
 
 RSpec.configure do |config|
   config.color = true
